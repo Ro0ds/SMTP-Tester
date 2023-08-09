@@ -155,6 +155,9 @@ namespace Entities.Email
             Log.AppendLine($"Mensagem: {corpoDoEmail}");
             Log.AppendLine($"Data de Envio: {horario}");
             Log.AppendLine("************************************");
+
+
+            OnNovoLog(Log.ToString());
         }
 
         private string CriarLog(string? conteudo)
